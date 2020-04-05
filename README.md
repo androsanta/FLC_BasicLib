@@ -18,7 +18,7 @@ It is assumed that the image provide only the build tools, while the source code
 
 This command create a container from the previously built image, open a shell (zsh) in interactive mode, remove the container on exit and mount the current working directory on the host into /mnt
 ```
-docker run --rm -it -v "${pwd}:/mnt" flc
+docker run --rm -it -v "$(pwd):/mnt" flc
 ```
 
 #### Run tools
